@@ -2,6 +2,7 @@
 This repository is created to complete Assignment B-3
 
 ## Link
+[My Shiny app link](https://qinhuaixu.shinyapps.io/assignment-b3-qinhuai_xu/) 
 
 ## My choice of assignment
 Option A - BC Liquor app
@@ -15,4 +16,4 @@ I added 5 features to BC Liquor shiny app:
 5. Use tabsetPanel to place plot and table in separate tabs
 
 ## Data source
-[BC Liquor](https://github.com/daattali/shiny-server/blob/master/bcl/data/bcl-data.csv)
+[BC Liquor dataset](https://github.com/daattali/shiny-server/blob/master/bcl/data/bcl-data.csv)
