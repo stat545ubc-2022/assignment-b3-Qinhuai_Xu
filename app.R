@@ -62,7 +62,7 @@ server <- function(input, output) {
       filtered_data()
     })
   
-  # Feature 3: Allow the user to download your table as a .csv file
+  # Feature 3: Allow the user to download the BC Liquor table as a .csv file
   output$download <-
     downloadHandler(
       filename = function(){
