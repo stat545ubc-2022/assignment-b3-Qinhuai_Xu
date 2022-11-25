@@ -12,6 +12,7 @@ ui <- fluidPage(
     sidebarPanel(
       sliderInput("priceInput", "Price", 0, 100, 
                   value = c(25, 40), pre = "$"), 
+      # Feature 4: Allow the user to search for multiple types simultaneously
       checkboxGroupInput("typeInput", "Type", 
                    choices = c("BEER", "REFRESHMENT", 
                                "SPIRITS", "WINE"), 
@@ -20,6 +21,7 @@ ui <- fluidPage(
       downloadButton("download")
     ),
     mainPanel(
+      # Feature 5: Use tabsetPanel to place plot and table in separate tabs
       tabsetPanel(
         tabPanel("Plot", plotOutput("alcohol_hist")),
         tabPanel("Table", DT::dataTableOutput("data_table"))
@@ -39,6 +41,7 @@ server <- function(input, output) {
                        Type %in% c("", input$typeInput))
     })
   
+  # Feature 2: Show the number of results found whenever the filters change
   output$row_count <- 
     renderText({
         counter <- filtered_data() %>% count()
@@ -53,11 +56,13 @@ server <- function(input, output) {
         ggplot(aes(Alcohol_Content)) + geom_histogram(bins=30)
     })
 
+  # Feature 1: Use the DT package to turn the static table into an interactive table
   output$data_table <- 
     DT::renderDataTable({
       filtered_data()
     })
   
+  # Feature 3: Allow the user to download your table as a .csv file
   output$download <-
     downloadHandler(
       filename = function(){
