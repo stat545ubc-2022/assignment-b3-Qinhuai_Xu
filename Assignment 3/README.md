@@ -1,5 +1,5 @@
 # assignment-b3-Qinhuai_Xu
-This repository is created to complete Assignment B-3
+This directory is created to complete Assignment B-3
 
 ## Link
 [My Shiny app link](https://qinhuaixu.shinyapps.io/assignment-b3-qinhuai_xu/) 
