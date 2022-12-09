@@ -1,0 +1,21 @@
+body {
+  	background-color: white;
+  	color: black; 
+}
+
+
+img {
+	width: 100%;
+}
+
+
+h2{
+	text-align: center;
+}
+
+h4 {
+	width: 90%;
+	font-family: "Comic Sans MS", "Comic Sans", "cursive";
+	margin: 0 auto;
+	text-align: center;
+}
