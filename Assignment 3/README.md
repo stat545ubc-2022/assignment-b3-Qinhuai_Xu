@@ -1,4 +1,4 @@
-# assignment-b3-Qinhuai_Xu
+# Assignment 3
 This directory is created to complete Assignment B-3
 
 ## Link
